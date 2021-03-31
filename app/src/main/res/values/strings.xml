@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WarehouseApp</string>
+    <string name="nameApp">GudangKu</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="register">Register</string>
+    <string name="fullName">Fullname</string>
+</resources>
