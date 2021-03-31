@@ -23,12 +23,9 @@ public class StartActivity extends AppCompatActivity {
         //mengatur tampilan awal menjadi fullscreen
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(StartActivity.this, LoginActivity.class));
-                StartActivity.this.finish();
-            }
+        handler.postDelayed(() -> {
+            startActivity(new Intent(StartActivity.this, LoginActivity.class));
+            StartActivity.this.finish();
         }, 3000L);
     }
 }
